@@ -4,12 +4,17 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
+
 public class TextNormalizerTest {
 
+    private final TextNormalizer textNormalizer = new TextNormalizer();
+    private String normText = "This string starts and ends with whitespace.";
 
     @Test
-    void calculatorTest() {
-        assertEquals(1 + 1, 3);
+    void   trimsOuterWhitespace() {
+        String startsEndsWithWhitespace = " This string starts and ends with whitespace. ";
+        String normalizedText = textNormalizer.normalize(startsEndsWithWhitespace);
+        assertEquals(normText, normalizedText);
     }
 
 }
