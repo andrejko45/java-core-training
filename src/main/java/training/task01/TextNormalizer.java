@@ -14,7 +14,7 @@ public class TextNormalizer {
         // 2. Kontrola podmienky ak na zaciatku a na konci sa nachadza whitespace
         //    Potreba pretypovat char na int a kontrola ASCII hodnoty znaku
         if(startingChar == 32 && endingChar == 32) {
-            normalizedText = text.substring(1, text.length() - 2);
+            normalizedText = text.substring(1, text.length() - 1);
         }
         else if(startingChar == 32) {
             normalizedText = text.substring(1);
