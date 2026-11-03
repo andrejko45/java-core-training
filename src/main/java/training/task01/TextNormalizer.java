@@ -24,9 +24,8 @@ public class TextNormalizer {
         }
 
         // 3. Odstranenie dvojitych medzier
-        if(normalizedText.contains("  ")) {
-            normalizedText = normalizedText.replace("\s\s", " ");
-        }
+        normalizedText = normalizedText.replaceAll("\s+", " ");
+
 
         // 4. Vratenie normalizovaneho textu
         return normalizedText;

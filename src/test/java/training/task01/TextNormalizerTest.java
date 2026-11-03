@@ -19,7 +19,7 @@ public class TextNormalizerTest {
 
     @Test
     void collapsesRepeatedSpaces() {
-        String collRepSpaces = "This  string starts  and  ends with whites space.";
+        String collRepSpaces = "This  string starts  and  ends    with whitespace.";
         String normalizedText = textNormalizer.normalize(collRepSpaces);
         assertEquals(normText, normalizedText);
     }
