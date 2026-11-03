@@ -32,4 +32,11 @@ public class TextNormalizerTest {
         assertEquals(withoutPreservedCase, normalizedText);
     }
 
+    @Test
+    void handlesEmptyString() {
+        String empty = "";
+        String normalizedText = textNormalizer.normalize(empty);
+        assertEquals(empty, normalizedText);
+    }
+
 }

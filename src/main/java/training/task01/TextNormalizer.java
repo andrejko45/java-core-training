@@ -4,6 +4,11 @@ public class TextNormalizer {
 
     String normalize(String text) {
 
+        // Ak je retazec prazny rovno ho vrat
+        if(text.isEmpty()) {
+            return text;
+        }
+
         String normalizedText = text;
 
         // 1. Prevedenie textu na pole znakov
