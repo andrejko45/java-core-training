@@ -2,7 +2,7 @@ package training.task01;
 
 public class TextNormalizer {
 
-    String normalize(String text) {
+    public String normalize(String text) {
 
         // 1. Odstranenie vonkajsich medzier
         String normalizedText = text.trim();
